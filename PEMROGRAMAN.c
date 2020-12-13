@@ -25,7 +25,7 @@ void menu ();                         // Merupakan fungsi yang di gunakan untuk 
 int main (){
 
         // Pada menu awal user akan dimnta untuk memasukkan pilihan untuk masuk ke dalam program, dimana disini terdapat dua pilihan yaitu Login dan SignUp, dimana disetiap pilihan akan mengantarkan user ke masing masing menu dari setiap pilihan tersebut
-        masuk:
+        pil_masuk:
         printf ("Pilihan Masuk\n");
         printf ("1. Login \n2. SignUp\n");
         printf ("Masukan Pilihan :");
@@ -56,7 +56,7 @@ int main (){
         default:
             printf   ("Pilihan yang Anda masukan Salah!!!\nSilahkan Memilih Pilihan yang Sudah ada\n=========================================\n");
             //goto masuk; dimana syntax ini akan membawa user kembali ke menu pemilihan metode masuk program untuk menginputkan pilihan yang benar, ini akan terus berulang hingga user menginputkan pilihan yang benar sesaui apa yang sudah ditampilkan pada menu pilihan.            
-            goto masuk;
+            goto pil_masuk;
             break;
         }
             // Pada bagian ini sistem akan meminta agar user memasukkan nama atau username sebagai inisial pengguna untuk memngakses program selanjutnya
